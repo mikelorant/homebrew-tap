@@ -7,9 +7,6 @@ class KopsAT1162 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "838b6aa8ad50514f9191f238920e073976453c4e01d5f350bc1a7ae69b1c1861" => :catalina
-    sha256 "e0b1462795554b28045fa7bd9e00702e6e8b13bd4169e0545feb01da9127b31f" => :mojave
-    sha256 "81ce10e69f44f46f758137c3f154d4faec574e4f34b32327a1962fe8ad8c61de" => :high_sierra
   end
 
   depends_on "go" => :build

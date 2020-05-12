@@ -1,4 +1,4 @@
-class KubernetesCliAT1163 < Formula
+class KubernetesCliAT1169 < Formula
   desc "Kubernetes command-line interface"
   homepage "https://kubernetes.io/"
   url "https://github.com/kubernetes/kubernetes.git",
@@ -10,7 +10,7 @@ class KubernetesCliAT1163 < Formula
     cellar :any_skip_relocation
   end
 
-  depends_on "go@1.12" => :build
+  depends_on "go@1.13" => :build
 
   def install
     ENV["GOPATH"] = buildpath
