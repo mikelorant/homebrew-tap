@@ -1,4 +1,4 @@
-class KafkaAT221 < Formula
+class KafkaAT222 < Formula
   desc "Publish-subscribe messaging rethought as a distributed commit log"
   homepage "https://kafka.apache.org/"
   url "https://downloads.apache.org/kafka/2.2.2/kafka_2.11-2.2.2.tgz"
