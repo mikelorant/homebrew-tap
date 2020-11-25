@@ -1,8 +1,8 @@
 class KafkaAT221 < Formula
   desc "Publish-subscribe messaging rethought as a distributed commit log"
   homepage "https://kafka.apache.org/"
-  url "https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.1/kafka_2.12-2.2.1.tgz"
-  sha256 "1b8f4f94514fd1f35dc2aba0114b56cf69afa0027184f2a2964625fc1bb46deb"
+  url "https://downloads.apache.org/kafka/2.2.2/kafka_2.11-2.2.2.tgz"
+  sha256 "a07b14cde99e4ac6f0fe14587f358149fc51e75d1cd20a8f0ed04e83b2f3851e"
 
   # Related to https://issues.apache.org/jira/browse/KAFKA-2034
   # Since Kafka does not currently set the source or target compability version inside build.gradle
