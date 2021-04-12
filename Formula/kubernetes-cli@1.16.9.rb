@@ -2,8 +2,8 @@ class KubernetesCliAT1169 < Formula
   desc "Kubernetes command-line interface"
   homepage "https://kubernetes.io/"
   url "https://github.com/kubernetes/kubernetes.git",
-      :tag      => "v1.16.9",
-      :revision => "a17149e1a189050796ced469dbd78d380f2ed5ef"
+      tag:      "v1.16.9",
+      revision: "a17149e1a189050796ced469dbd78d380f2ed5ef"
   head "https://github.com/kubernetes/kubernetes.git"
 
   bottle do
@@ -27,11 +27,11 @@ class KubernetesCliAT1169 < Formula
       bin.install "_output/local/bin/darwin/amd64/kubectl"
 
       # Install bash completion
-      output = Utils.popen_read("#{bin}/kubectl completion bash")
+      output = Utils.safe_popen_read("#{bin}/kubectl", "completion", "bash")
       (bash_completion/"kubectl").write output
 
       # Install zsh completion
-      output = Utils.popen_read("#{bin}/kubectl completion zsh")
+      output = Utils.safe_popen_read("#{bin}/kubectl", "completion", "zsh")
       (zsh_completion/"_kubectl").write output
 
       prefix.install_metafiles

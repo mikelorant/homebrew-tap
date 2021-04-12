@@ -5,6 +5,6 @@ class MultiGitStatus < Formula
   sha256 "13ce21fc087354cd7e0fd16f332bcff7e8c42c0315d3f27803159926aff3360f"
 
   def install
-    bin.install './mgitstatus'
+    bin.install "./mgitstatus"
   end
 end

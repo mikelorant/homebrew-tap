@@ -4,7 +4,7 @@ class PythonAT2 < Formula
   url "https://www.python.org/ftp/python/2.7.17/Python-2.7.17.tar.xz"
   sha256 "4d43f033cdbd0aa7b7023c81b0e986fd11e653b5248dac9144d508f11812ba41"
   revision 1
-  head "https://github.com/python/cpython.git", :branch => "2.7"
+  head "https://github.com/python/cpython.git", branch: "2.7"
 
   # setuptools remembers the build flags python is built with and uses them to
   # build packages later. Xcode-only systems need different flags.
@@ -282,18 +282,19 @@ class PythonAT2 < Formula
     EOS
   end
 
-  def caveats; <<~EOS
-    Pip and setuptools have been installed. To update them
-      pip install --upgrade pip setuptools
+  def caveats
+    <<~EOS
+      Pip and setuptools have been installed. To update them
+        pip install --upgrade pip setuptools
 
-    You can install Python packages with
-      pip install <package>
+      You can install Python packages with
+        pip install <package>
 
-    They will install into the site-package directory
-      #{site_packages}
+      They will install into the site-package directory
+        #{site_packages}
 
-    See: https://docs.brew.sh/Homebrew-and-Python
-  EOS
+      See: https://docs.brew.sh/Homebrew-and-Python
+    EOS
   end
 
   test do
