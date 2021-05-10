@@ -8,4 +8,10 @@ cask "crowdstrike-falcon-sensor" do
   homepage "https://www.crowdstrike.com/endpoint-security-products/falcon-platform/"
 
   pkg "FalconSensorMacOS.MaverickGyr.pkg"
+
+  uninstall script: {
+    executable: "/Applications/Falcon.app/Contents/Resources/falconctl",
+    args: "uninstall",
+    sudo: true
+  }
 end
