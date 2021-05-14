@@ -6,10 +6,6 @@ class KubernetesHelmAT2143 < Formula
       revision: "0e7f3b6637f7af8fcfddb3d2941fcc7cbebb0085"
   head "https://github.com/helm/helm.git"
 
-  bottle do
-    cellar :any_skip_relocation
-  end
-
   depends_on "glide" => :build
   depends_on "go" => :build
 

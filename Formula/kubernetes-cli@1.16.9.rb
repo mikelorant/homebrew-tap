@@ -6,10 +6,6 @@ class KubernetesCliAT1169 < Formula
       revision: "a17149e1a189050796ced469dbd78d380f2ed5ef"
   head "https://github.com/kubernetes/kubernetes.git"
 
-  bottle do
-    cellar :any_skip_relocation
-  end
-
   depends_on "go@1.13" => :build
 
   def install
