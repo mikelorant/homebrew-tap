@@ -1,6 +1,6 @@
 require "language/node"
 
-class SlidevCli < Formula
+class Slidev < Formula
   desc "Presentation slides for developers"
   homepage "https://sli.dev"
   url "https://registry.npmjs.org/@slidev/cli/-/cli-0.46.1.tgz"
